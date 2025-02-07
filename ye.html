@@ -43,6 +43,7 @@
             border: 1px solid var(--secondary-color);
             padding: 10px;
             border-radius: var(--border-radius);
+            padding-bottom: 20px; /* Reduce padding since message isn't fixed anymore */
         }
 
         .banner {
@@ -231,6 +232,13 @@
 
         .post-restriction::before {
             content: "⚠️";
+        }
+
+        .pinned-message {
+            background-color: var(--primary-color);
+            border-top: 1px solid var(--secondary-color);
+            padding: 10px 0;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -731,8 +739,7 @@
                     </div>
                 </div>
                 <p class="post-content">I channeled Andrew Tate on a few of these tweets</p>
-                <div class="icons">
-                </div>
+                <div class="icons"></div>
             </div>
             <div class="post" data-time="2025-02-07T13:53:00+02:00">
                 <div class="profile post-profile">
@@ -893,19 +900,15 @@
                 </div>
                 <p class="post-content">I SAY WHATEVER THE FUCK I WANT PUSSIES</p>
             </div>
-
-            <div class="post" data-time="2000-01-01T13:22:00+02:00">
-                <div class="profile post-profile">
-                    <img src="https://avatars.githubusercontent.com/u/76966291?v=4" alt="Profile Picture" onerror="handleImageError(this)">
-                    <div>
-                        <h2>cuhsy <img class="gold-badge" alt="Gold Checkmark" style="width: 15px; height: 15px;">
-                            <span class="post-date"></span>
-                        </h2>
-                    </div>
+        </div>
+        <div class="pinned-message">
+            <div class="profile post-profile">
+                <img src="https://avatars.githubusercontent.com/u/76966291?v=4" alt="Profile Picture" onerror="handleImageError(this)">
+                <div>
+                    <h2><a href="https://github.com/cuhsy" target="_blank" rel="noopener noreferrer" style="color: white;">cuhsy</a> <img class="gold-badge" alt="Gold Checkmark" style="width: 15px; height: 15px;"></h2>
                 </div>
-                <p class="post-content">I am actively updating the list. Check back soon for updates.</p>
             </div>
-
+            <p class="post-content">LIST IS BEING ACTIVELY UPDATED. CHECK BACK SOON FOR UPDATES</p>
         </div>
     </div>
     <script>
