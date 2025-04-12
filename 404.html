@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - CUH.LIFE</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Same center styling as index.html */
+        .center-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8vw;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Remove default margins from body */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        /* Style for the clickable HOME text */
+        .home-link {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        
+        .home-link:hover {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center-message">
+        404 - <a href="https://cuh.life/" class="home-link">HOME</a>
+    </h1>
+</body>
+</html>
